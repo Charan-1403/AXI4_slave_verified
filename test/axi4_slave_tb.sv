@@ -50,11 +50,11 @@ module axi4_slave_tb();
     
     environment env;
     
-    always@(posedge clk) begin
+    /*always@(posedge clk) begin
         if(dut.S_AXI_RVALID && dut.S_AXI_RREADY)begin
-            $display("Address: %b - %d| Data: %b | Mask : %b", dut.raddr, dut.raddr, dut.S_AXI_RDATA, dut.bit_mask);
+           // $display("Address: %b - %d| Data: %b | Mask : %b", dut.raddr, dut.raddr, dut.S_AXI_RDATA, dut.bit_mask);
         end
-    end
+    end */
     
     initial begin
         env = new(vif);
