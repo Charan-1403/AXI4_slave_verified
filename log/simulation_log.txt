@@ -1,0 +1,438 @@
+# run all
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =   727 pushed to mailbox!
+[DRIVER] Transaction from driver for address AWADDR =        208 has been completed.
+[GENERATOR] Write transaction AWID =   727 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =   727 pushed to mailbox!
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:            127956719
+[SCOREBOARD] Data written:            127956718
+[SCOREBOARD] Data written:            127956717
+[SCOREBOARD] Data written:            127956716
+[SCOREBOARD] Data written:            127956715
+[SCOREBOARD] Data written:            127956714
+[SCOREBOARD] Data written:            127956713
+[SCOREBOARD] Data written:            127956712
+[SCOREBOARD] Data written:            127956711
+[SCOREBOARD] Data written:            127956710
+[SCOREBOARD] Data written:            127956709
+[SCOREBOARD] Data written:            127956708
+[SCOREBOARD] Data written:            127956707
+[SCOREBOARD] Data written:            127956706
+[DRIVER] Transaction from driver for address ARADDR =        208 has been completed
+ARLEN =  13 | ARBURST = 00 | ARSIZE = 3
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =   327 pushed to mailbox!
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[SCOREBOARD] Data read:            127956706
+[DRIVER] Transaction from driver for address AWADDR =        536 has been completed.
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           2687849214
+[SCOREBOARD] Data written:           2687849213
+[SCOREBOARD] Data written:           2687849212
+[SCOREBOARD] Data written:           2687849211
+[SCOREBOARD] Data written:           2687849210
+[SCOREBOARD] Data written:           2687849209
+[SCOREBOARD] Data written:           2687849208
+[SCOREBOARD] Data written:           2687849207
+[SCOREBOARD] Data written:           2687849206
+[SCOREBOARD] Data written:           2687849205
+[SCOREBOARD] Data written:           2687849204
+[SCOREBOARD] Data written:           2687849203
+[SCOREBOARD] Data written:           2687849202
+[SCOREBOARD] Data written:           2687849201
+[SCOREBOARD] Data written:           2687849200
+[SCOREBOARD] Data written:           2687849199
+[GENERATOR] Write transaction AWID =   327 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =   327 pushed to mailbox!
+[DRIVER] Transaction from driver for address ARADDR =        536 has been completed
+ARLEN =  15 | ARBURST = 10 | ARSIZE = 3
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =   791 pushed to mailbox!
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           2687849214
+[SCOREBOARD] Data read:           2687849213
+[SCOREBOARD] Data read:           2687849212
+[SCOREBOARD] Data read:           2687849211
+[SCOREBOARD] Data read:           2687849210
+[SCOREBOARD] Data read:           2687849209
+[SCOREBOARD] Data read:           2687849208
+[SCOREBOARD] Data read:           2687849207
+[SCOREBOARD] Data read:           2687849206
+[SCOREBOARD] Data read:           2687849205
+[SCOREBOARD] Data read:           2687849204
+[SCOREBOARD] Data read:           2687849203
+[SCOREBOARD] Data read:           2687849202
+[SCOREBOARD] Data read:           2687849201
+[SCOREBOARD] Data read:           2687849200
+[SCOREBOARD] Data read:           2687849199
+[DRIVER] Transaction from driver for address AWADDR =        440 has been completed.
+[GENERATOR] Write transaction AWID =   791 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =   791 pushed to mailbox!
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:            946260873
+[SCOREBOARD] Data written:            946260872
+[SCOREBOARD] Data written:            946260871
+[SCOREBOARD] Data written:            946260870
+[SCOREBOARD] Data written:            946260869
+[SCOREBOARD] Data written:            946260868
+[SCOREBOARD] Data written:            946260867
+[SCOREBOARD] Data written:            946260866
+[SCOREBOARD] Data written:            946260865
+[DRIVER] Transaction from driver for address ARADDR =        440 has been completed
+ARLEN =   8 | ARBURST = 01 | ARSIZE = 3
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =   268 pushed to mailbox!
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:            946260873
+[SCOREBOARD] Data read:            946260872
+[SCOREBOARD] Data read:            946260871
+[SCOREBOARD] Data read:            946260870
+[SCOREBOARD] Data read:            946260869
+[SCOREBOARD] Data read:            946260868
+[SCOREBOARD] Data read:            946260867
+[SCOREBOARD] Data read:            946260866
+[SCOREBOARD] Data read:            946260865
+[DRIVER] Transaction from driver for address AWADDR =        688 has been completed.
+[GENERATOR] Write transaction AWID =   268 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =   268 pushed to mailbox!
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           3476032005
+[SCOREBOARD] Data written:           3476032004
+[SCOREBOARD] Data written:           3476032003
+[SCOREBOARD] Data written:           3476032002
+[SCOREBOARD] Data written:           3476032001
+[SCOREBOARD] Data written:           3476032000
+[SCOREBOARD] Data written:           3476031999
+[SCOREBOARD] Data written:           3476031998
+[SCOREBOARD] Data written:           3476031997
+[SCOREBOARD] Data written:           3476031996
+[DRIVER] Transaction from driver for address ARADDR =        688 has been completed
+ARLEN =   9 | ARBURST = 00 | ARSIZE = 3
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           3476031996
+[SCOREBOARD] Data read:           3476031996
+[SCOREBOARD] Data read:           3476031996
+[SCOREBOARD] Data read:           3476031996
+[SCOREBOARD] Data read:           3476031996
+[SCOREBOARD] Data read:           3476031996
+[SCOREBOARD] Data read:           3476031996
+[SCOREBOARD] Data read:           3476031996
+[SCOREBOARD] Data read:           3476031996
+[SCOREBOARD] Data read:           3476031996
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =    49 pushed to mailbox!
+[DRIVER] Transaction from driver for address AWADDR =        712 has been completed.
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           3153844055
+[SCOREBOARD] Data written:           3153844054
+[GENERATOR] Write transaction AWID =    49 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =    49 pushed to mailbox!
+[DRIVER] Transaction from driver for address ARADDR =        712 has been completed
+ARLEN =   1 | ARBURST = 01 | ARSIZE = 3
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           3153844055
+[SCOREBOARD] Data read:           3153844054
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =    16 pushed to mailbox!
+[DRIVER] Transaction from driver for address AWADDR =        904 has been completed.
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           3647276260
+[GENERATOR] Write transaction AWID =    16 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =    16 pushed to mailbox!
+[DRIVER] Transaction from driver for address ARADDR =        904 has been completed
+ARLEN =   0 | ARBURST = 00 | ARSIZE = 3
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           3647276260
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =   343 pushed to mailbox!
+[DRIVER] Transaction from driver for address AWADDR =        448 has been completed.
+[GENERATOR] Write transaction AWID =   343 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =   343 pushed to mailbox!
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           3628793840
+[SCOREBOARD] Data written:           3628793839
+[SCOREBOARD] Data written:           3628793838
+[SCOREBOARD] Data written:           3628793837
+[SCOREBOARD] Data written:           3628793836
+[SCOREBOARD] Data written:           3628793835
+[DRIVER] Transaction from driver for address ARADDR =        448 has been completed
+ARLEN =   5 | ARBURST = 00 | ARSIZE = 3
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           3628793835
+[SCOREBOARD] Data read:           3628793835
+[SCOREBOARD] Data read:           3628793835
+[SCOREBOARD] Data read:           3628793835
+[SCOREBOARD] Data read:           3628793835
+[SCOREBOARD] Data read:           3628793835
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =   239 pushed to mailbox!
+[DRIVER] Transaction from driver for address AWADDR =        440 has been completed.
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           2835633736
+[SCOREBOARD] Data written:           2835633735
+[SCOREBOARD] Data written:           2835633734
+[SCOREBOARD] Data written:           2835633733
+[SCOREBOARD] Data written:           2835633732
+[SCOREBOARD] Data written:           2835633731
+[SCOREBOARD] Data written:           2835633730
+[SCOREBOARD] Data written:           2835633729
+[SCOREBOARD] Data written:           2835633728
+[SCOREBOARD] Data written:           2835633727
+[SCOREBOARD] Data written:           2835633726
+[SCOREBOARD] Data written:           2835633725
+[SCOREBOARD] Data written:           2835633724
+[SCOREBOARD] Data written:           2835633723
+[SCOREBOARD] Data written:           2835633722
+[SCOREBOARD] Data written:           2835633721
+[GENERATOR] Write transaction AWID =   239 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =   239 pushed to mailbox!
+[DRIVER] Transaction from driver for address ARADDR =        440 has been completed
+ARLEN =  15 | ARBURST = 00 | ARSIZE = 3
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[SCOREBOARD] Data read:           2835633721
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =    81 pushed to mailbox!
+[DRIVER] Transaction from driver for address AWADDR =        592 has been completed.
+[GENERATOR] Write transaction AWID =    81 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =    81 pushed to mailbox!
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           4042641365
+[DRIVER] Transaction from driver for address ARADDR =        592 has been completed
+ARLEN =   0 | ARBURST = 00 | ARSIZE = 3
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           4042641365
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =   299 pushed to mailbox!
+[DRIVER] Transaction from driver for address AWADDR =        656 has been completed.
+[GENERATOR] Write transaction AWID =   299 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =   299 pushed to mailbox!
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           2711936459
+[SCOREBOARD] Data written:           2711936458
+[SCOREBOARD] Data written:           2711936457
+[SCOREBOARD] Data written:           2711936456
+[SCOREBOARD] Data written:           2711936455
+[SCOREBOARD] Data written:           2711936454
+[SCOREBOARD] Data written:           2711936453
+[SCOREBOARD] Data written:           2711936452
+[SCOREBOARD] Data written:           2711936451
+[SCOREBOARD] Data written:           2711936450
+[SCOREBOARD] Data written:           2711936449
+[SCOREBOARD] Data written:           2711936448
+[SCOREBOARD] Data written:           2711936447
+[SCOREBOARD] Data written:           2711936446
+[SCOREBOARD] Data written:           2711936445
+[SCOREBOARD] Data written:           2711936444
+[DRIVER] Transaction from driver for address ARADDR =        656 has been completed
+ARLEN =  15 | ARBURST = 00 | ARSIZE = 3
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =   194 pushed to mailbox!
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[SCOREBOARD] Data read:           2711936444
+[DRIVER] Transaction from driver for address AWADDR =        344 has been completed.
+[GENERATOR] Write transaction AWID =   194 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =   194 pushed to mailbox!
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           3163922449
+[SCOREBOARD] Data written:           3163922448
+[DRIVER] Transaction from driver for address ARADDR =        344 has been completed
+ARLEN =   1 | ARBURST = 10 | ARSIZE = 3
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =   370 pushed to mailbox!
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           3163922449
+[SCOREBOARD] Data read:           3163922448
+[DRIVER] Transaction from driver for address AWADDR =        912 has been completed.
+[GENERATOR] Write transaction AWID =   370 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =   370 pushed to mailbox!
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           3716655098
+[SCOREBOARD] Data written:           3716655097
+[SCOREBOARD] Data written:           3716655096
+[SCOREBOARD] Data written:           3716655095
+[SCOREBOARD] Data written:           3716655094
+[SCOREBOARD] Data written:           3716655093
+[SCOREBOARD] Data written:           3716655092
+[DRIVER] Transaction from driver for address ARADDR =        912 has been completed
+ARLEN =   6 | ARBURST = 00 | ARSIZE = 3
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =    72 pushed to mailbox!
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           3716655092
+[SCOREBOARD] Data read:           3716655092
+[SCOREBOARD] Data read:           3716655092
+[SCOREBOARD] Data read:           3716655092
+[SCOREBOARD] Data read:           3716655092
+[SCOREBOARD] Data read:           3716655092
+[SCOREBOARD] Data read:           3716655092
+[DRIVER] Transaction from driver for address AWADDR =        600 has been completed.
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           3859673858
+[SCOREBOARD] Data written:           3859673857
+[SCOREBOARD] Data written:           3859673856
+[SCOREBOARD] Data written:           3859673855
+[SCOREBOARD] Data written:           3859673854
+[SCOREBOARD] Data written:           3859673853
+[SCOREBOARD] Data written:           3859673852
+[SCOREBOARD] Data written:           3859673851
+[SCOREBOARD] Data written:           3859673850
+[SCOREBOARD] Data written:           3859673849
+[SCOREBOARD] Data written:           3859673848
+[SCOREBOARD] Data written:           3859673847
+[SCOREBOARD] Data written:           3859673846
+[SCOREBOARD] Data written:           3859673845
+[SCOREBOARD] Data written:           3859673844
+[SCOREBOARD] Data written:           3859673843
+[GENERATOR] Write transaction AWID =    72 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =    72 pushed to mailbox!
+[DRIVER] Transaction from driver for address ARADDR =        600 has been completed
+ARLEN =  15 | ARBURST = 10 | ARSIZE = 3
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           3859673858
+[SCOREBOARD] Data read:           3859673857
+[SCOREBOARD] Data read:           3859673856
+[SCOREBOARD] Data read:           3859673855
+[SCOREBOARD] Data read:           3859673854
+[SCOREBOARD] Data read:           3859673853
+[SCOREBOARD] Data read:           3859673852
+[SCOREBOARD] Data read:           3859673851
+[SCOREBOARD] Data read:           3859673850
+[SCOREBOARD] Data read:           3859673849
+[SCOREBOARD] Data read:           3859673848
+[SCOREBOARD] Data read:           3859673847
+[SCOREBOARD] Data read:           3859673846
+[SCOREBOARD] Data read:           3859673845
+[SCOREBOARD] Data read:           3859673844
+[SCOREBOARD] Data read:           3859673843
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =   347 pushed to mailbox!
+[DRIVER] Transaction from driver for address AWADDR =         32 has been completed.
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           4264586862
+[SCOREBOARD] Data written:           4264586861
+[SCOREBOARD] Data written:           4264586860
+[SCOREBOARD] Data written:           4264586859
+[SCOREBOARD] Data written:           4264586858
+[SCOREBOARD] Data written:           4264586857
+[SCOREBOARD] Data written:           4264586856
+[SCOREBOARD] Data written:           4264586855
+[SCOREBOARD] Data written:           4264586854
+[SCOREBOARD] Data written:           4264586853
+[SCOREBOARD] Data written:           4264586852
+[SCOREBOARD] Data written:           4264586851
+[SCOREBOARD] Data written:           4264586850
+[SCOREBOARD] Data written:           4264586849
+[SCOREBOARD] Data written:           4264586848
+[SCOREBOARD] Data written:           4264586847
+[GENERATOR] Write transaction AWID =   347 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =   347 pushed to mailbox!
+[DRIVER] Transaction from driver for address ARADDR =         32 has been completed
+ARLEN =  15 | ARBURST = 10 | ARSIZE = 3
+[GENERATOR] Write transaction randomization success!
+[GENERATOR] Write transaction AWID =   476 pushed to mailbox!
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           4264586862
+[SCOREBOARD] Data read:           4264586861
+[SCOREBOARD] Data read:           4264586860
+[SCOREBOARD] Data read:           4264586859
+[SCOREBOARD] Data read:           4264586858
+[SCOREBOARD] Data read:           4264586857
+[SCOREBOARD] Data read:           4264586856
+[SCOREBOARD] Data read:           4264586855
+[SCOREBOARD] Data read:           4264586854
+[SCOREBOARD] Data read:           4264586853
+[SCOREBOARD] Data read:           4264586852
+[SCOREBOARD] Data read:           4264586851
+[SCOREBOARD] Data read:           4264586850
+[SCOREBOARD] Data read:           4264586849
+[SCOREBOARD] Data read:           4264586848
+[SCOREBOARD] Data read:           4264586847
+[DRIVER] Transaction from driver for address AWADDR =         80 has been completed.
+[GENERATOR] Write transaction AWID =   476 finished!
+[GENERATOR] Read transaction randomization success!
+[GENERATOR] Read transaction ARID =   476 pushed to mailbox!
+[SCOREBOARD] W Transaction passed!
+[SCOREBOARD] Data written:           2731613562
+[SCOREBOARD] Data written:           2731613561
+[SCOREBOARD] Data written:           2731613560
+[SCOREBOARD] Data written:           2731613559
+[SCOREBOARD] Data written:           2731613558
+[SCOREBOARD] Data written:           2731613557
+[SCOREBOARD] Data written:           2731613556
+[SCOREBOARD] Data written:           2731613555
+[SCOREBOARD] Data written:           2731613554
+[SCOREBOARD] Data written:           2731613553
+[DRIVER] Transaction from driver for address ARADDR =         80 has been completed
+ARLEN =   9 | ARBURST = 01 | ARSIZE = 3
+[SCOREBOARD] R Transaction passed!
+[SCOREBOARD] Data read:           2731613562
+[SCOREBOARD] Data read:           2731613561
+[SCOREBOARD] Data read:           2731613560
+[SCOREBOARD] Data read:           2731613559
+[SCOREBOARD] Data read:           2731613558
+[SCOREBOARD] Data read:           2731613557
+[SCOREBOARD] Data read:           2731613556
+[SCOREBOARD] Data read:           2731613555
+[SCOREBOARD] Data read:           2731613554
+[SCOREBOARD] Data read:           2731613553
+DONE!
+
+$finish called at time : 9055 ns : File "C:/Users/bozzc/ip_repo/axi4_slave/axi4_slave.srcs/sim_1/new/axi4_slave_tb.sv" Line 69
