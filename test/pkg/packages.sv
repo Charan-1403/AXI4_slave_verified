@@ -30,14 +30,18 @@ package axi_pkg;
         logic[1:0] bid;
         
         logic bready;
+        
+        event tx_done;
+        logic[63:0] read_data_queue[$];
+        logic[63:0] write_data_queue[$];
 
-                
+        constraint w_addr_aligned {(awaddr % (1 << awsize) == 0);}
         constraint w_size_id {awid < 1024;}
         constraint w_addr_bound {awaddr >= 0; (awaddr + ((awlen+1)<<awsize)) <= 1024;}
         constraint w_len_bound {awlen < 16;}
         constraint w_warp_size_bound {(awburst == 2'b10) -> (awlen inside {1, 3, 7, 15});}
         constraint w_fixed_size_bound {(awburst == 2'b00) -> (awlen >= 0 && awlen <= 15);}
-        constraint w_data_width_bound {awsize <= 3;}
+        constraint w_data_width_bound {awsize == 3;}
         constraint w_reserved_awburst {(awburst != 2'b11);}
         
         
@@ -85,6 +89,42 @@ package axi_pkg;
                     gen2scb_w.put(transac);
                     $display("AWID = %h | AWADDR = %h | AWLEN = %d | AWSIZE = %d | AWBURST = %b", transac.awid, transac.awaddr, transac.awlen, transac.awsize, transac.awburst);
                 end
+            end
+        endtask
+        
+        task run_read_after_write();
+            axi_trans w_transac;
+            axi_trans r_transac;
+            
+            for(int i = 0; i < n_trans; i++) begin
+                w_transac = new();
+                if(w_transac.randomize() == 0) $display("[GENERATOR] Write transcation randomization failed!");
+                else $display("[GENERATOR] Write transaction randomization success!");
+                
+                gen2drv_w.put(w_transac);
+                gen2scb_w.put(w_transac);
+                
+                $display("[GENERATOR] Write transaction AWID = %d pushed to mailbox!",w_transac.awid);
+                
+                @(w_transac.tx_done);
+                
+                $display("[GENERATOR] Write transaction AWID = %d finished!",w_transac.awid);
+                
+                r_transac = new();
+                
+                if(r_transac.randomize() == 0) $display("[GENERATOR] Read transcation randomization failed!");
+                else $display("[GENERATOR] Read transaction randomization success!");
+                r_transac.araddr = w_transac.awaddr;
+                r_transac.arsize = w_transac.awsize;
+                r_transac.arburst = w_transac.awburst;
+                r_transac.arlen = w_transac.awlen;
+                r_transac.arid = w_transac.awid;
+                
+                gen2drv.put(r_transac);
+                gen2scb.put(r_transac);
+                $display("[GENERATOR] Read transaction ARID = %d pushed to mailbox!",r_transac.arid);
+                
+                @(r_transac.tx_done);
             end
         endtask
         
@@ -143,12 +183,16 @@ package axi_pkg;
                     
                    vif.wvalid <= 1;
                    vif.wdata <= w_transac.wdata + count;
-                   vif.wstrb <= (8'b1 << ($urandom_range(0,7)));
+                   //vif.wstrb <= (8'b1 << ($urandom_range(0,7)));
+                   vif.wstrb <= 8'hFF;
                    vif.wlast <= (count == 0);
                     
                    forever begin
                        @(posedge vif.clk);
-                       if(vif.wready) break;
+                       if(vif.wready) begin
+                            w_transac.write_data_queue.push_back(vif.wdata);
+                            break;
+                       end
                    end
                     
                    vif.wlast <= 0;
@@ -165,8 +209,9 @@ package axi_pkg;
                end
                
                vif.bready <= 0;
+               -> w_transac.tx_done;
                
-               $display("Transaction from driver for address AWADDR = %d has been completed.", vif.awaddr);     
+               $display("[DRIVER] Transaction from driver for address AWADDR = %d has been completed.", vif.awaddr);     
             end
         endtask
         
@@ -205,8 +250,9 @@ package axi_pkg;
                 end
                 
                 vif.rready <= 0;
+                -> transac.tx_done;
                 
-                $display("Transaction from driver for address ARADDR = %d has been completed\nARLEN = %d | ARBURST = %b | ARSIZE = %d",transac.araddr, transac.arlen, transac.arburst, transac.arsize);
+                $display("[DRIVER] Transaction from driver for address ARADDR = %d has been completed\nARLEN = %d | ARBURST = %b | ARSIZE = %d",transac.araddr, transac.arlen, transac.arburst, transac.arsize);
             end
             
             
@@ -247,6 +293,7 @@ package axi_pkg;
         endfunction
         
         task run_read();
+        
         for(int i = 0; i < num_trans; i++) begin
             obs_trans = new();
             num_beats = 0;
@@ -260,6 +307,7 @@ package axi_pkg;
                 forever begin
                     @(posedge vif.clk);
                     if(vif.rvalid && vif.rready) begin
+                        obs_trans.read_data_queue.push_back(vif.rdata);
                         obs_trans.arid = vif.rid;
                         num_beats = num_beats + 1;
                         if(vif.rlast) begin
@@ -347,7 +395,12 @@ package axi_pkg;
                 else if(recv_trans.arlen != sent_trans.arlen)begin
                     $error("Wrong ARLEN! Expected: %h | Returned: %h", sent_trans.arlen, recv_trans.arlen);
                 end
-                else $display("R Transaction passed!");
+                else $display("[SCOREBOARD] R Transaction passed!");
+                
+                foreach(recv_trans.read_data_queue[idx]) begin
+                    $display("[SCOREBOARD] Data read: %d", recv_trans.read_data_queue[idx]);
+                end
+                
             end
         endtask
         
@@ -359,7 +412,11 @@ package axi_pkg;
                 if(recv_trans_w.bid != sent_trans_w.bid) begin
                     $error("Wrong BID! Expected: %h | Returned: %h", sent_trans_w.bid, recv_trans_w.bid);
                 end
-                else $display("W Transaction passed!");
+                else $display("[SCOREBOARD] W Transaction passed!");
+                
+                foreach(sent_trans_w.write_data_queue[idx]) begin
+                    $display("[SCOREBOARD] Data written: %d", sent_trans_w.write_data_queue[idx]);
+                end
             end
         endtask
         
@@ -393,7 +450,7 @@ package axi_pkg;
         
         task run();
             fork
-                gen.run();
+                gen.run_read_after_write();
                 drv.run();
                 scb.run();
                 mon.run();
