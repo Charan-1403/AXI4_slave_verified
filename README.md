@@ -239,6 +239,8 @@ These tests confirmed that both channels operate independently and reliably unde
 
 ## **Results**
 
+<img width="2311" height="1403" alt="image" src="https://github.com/user-attachments/assets/1586523a-ed1c-4d9e-a794-c933009408d1" />
+
 The final design demonstrates:
 
 * Correct implementation of all AXI4 burst types
